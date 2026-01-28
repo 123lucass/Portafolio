@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description'
+        content='Lucas Dominguez - Desarrollador Full Stack Jr especializado en React, APIs REST, SQL y automatización con n8n'>
+    <meta property='og:title' content='Lucas Dominguez - Desarrollador Full Stack Jr'>
+    <meta property='og:description' content='Portafolio profesional de desarrollador Full Stack Jr'>
+    <meta property='og:image' content='./assets/og-image.png'>
+    <title>Lucas Dominguez - Desarrollador Full Stack Jr</title>
+    <link rel='icon' href='./assets/favicon.ico'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+
+<body>
+    <nav class='navbar' id='navbar'>
+        <div class='container nav-container'>
+            <a href='#inicio' class='logo'><i class='fas fa-code'></i><span>Lucas Dominguez</span></a>
+            <button class='menu-toggle' id='menuToggle'
+                aria-label='Toggle menu'><span></span><span></span><span></span></button>
+            <div class='nav-menu' id='navMenu'>
+                <ul class='nav-links'>
+                    <li><a href='#inicio' class='nav-link active'>Inicio</a></li>
+                    <li><a href='#proyectos' class='nav-link'>Proyectos</a></li>
+                    <li><a href='#skills' class='nav-link'>Skills</a></li>
+                    <li><a href='#sobre-mi' class='nav-link'>Sobre mí</a></li>
+                    <li><a href='#contacto' class='nav-link'>Contacto</a></li>
+                </ul>
+                <div class='nav-actions'>
+                    <a href='./assets/CV_Lucas_Dominguez.pdf' download class='btn btn-outline btn-sm'><i
+                            class='fas fa-download'></i> CV</a>
+                    <a href='https://github.com/123lucass' target='_blank' class='btn btn-outline btn-sm'><i
+                            class='fab fa-github'></i> GitHub</a>
+                    <button class='theme-toggle' id='themeToggle' aria-label='Toggle theme'><i
+                            class='fas fa-moon'></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class='hero' id='inicio'>
+            <div class='gradient-blob blob-1'></div>
+            <div class='gradient-blob blob-2'></div>
+            <div class='container hero-container'>
+                <div class='hero-content'>
+                    <p class='hero-greeting'>Hola, soy</p>
+                    <h1 class='hero-title'>Lucas Dominguez</h1>
+                    <h2 class='hero-subtitle'>Desarrollador Full Stack Jr</h2>
+                    <p class='hero-stack'>React · APIs REST · SQL · n8n Automation</p>
+                    <div class='hero-chips'><span class='chip'>Auth + Roles</span><span class='chip'>CRUD +
+                            DB</span><span class='chip'>Deploy + Docs</span></div>
+                    <div class='hero-cta'>
+                        <a href='#proyectos' class='btn btn-primary'><i class='fas fa-briefcase'></i> Ver Proyectos</a>
+                        <a href='#contacto' class='btn btn-secondary'><i class='fas fa-envelope'></i> Contactarme</a>
+                    </div>
+                    <div class='hero-stats'>
+                        <div class='stat'><i class='fas fa-rocket'></i>
+                            <div><strong>4+</strong><span>Proyectos deployados</span></div>
+                        </div>
+                        <div class='stat'><i class='fab fa-github'></i>
+                            <div><strong>15+</strong><span>Repositorios</span></div>
+                        </div>
+                        <div class='stat'><i class='fas fa-cogs'></i>
+                            <div><strong>10+</strong><span>Automatizaciones n8n</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='section proyectos' id='proyectos'>
+            <div class='container'>
+                <div class='section-header'>
+                    <h2 class='section-title'>Proyectos Destacados</h2>
+                    <p class='section-description'>Aplicaciones completas con autenticación, bases de datos y deployment
+                    </p>
+                </div>
+                <div class='projects-grid'>
+                    <article class='project-card' data-project='1'>
+                        <div class='project-image'><img src='./assets/img/project-1.png' alt='Turnero Pro'>
+                            <div class='project-overlay'><button class='btn btn-primary btn-sm'
+                                    onclick='openModal(1)'>Ver detalles</button></div>
+                        </div>
+                        <div class='project-content'>
+                            <h3 class='project-title'>Turnero Pro</h3>
+                            <p class='project-description'>Sistema de gestión de turnos con autenticación, roles
+                                (admin/usuario) y panel de administración completo.</p>
+                            <div class='project-stack'><span class='tag'>React</span><span
+                                    class='tag'>Node.js</span><span class='tag'>PostgreSQL</span><span
+                                    class='tag'>JWT</span></div>
+                            <ul class='project-features'>
+                                <li><i class='fas fa-check'></i> Sistema de autenticación con JWT y roles</li>
+                                <li><i class='fas fa-check'></i> CRUD completo de turnos y usuarios</li>
+                                <li><i class='fas fa-check'></i> Dashboard con estadísticas en tiempo real</li>
+                            </ul>
+                            <div class='project-links'>
+                                <a href='https://demo-turnero.netlify.app' target='_blank'
+                                    class='btn btn-outline btn-sm'><i class='fas fa-external-link-alt'></i> Demo</a>
+                                <a href='https://github.com/tu-usuario/turnero-pro' target='_blank'
+                                    class='btn btn-outline btn-sm'><i class='fab fa-github'></i> Código</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class='project-card' data-project='2'>
+                        <div class='project-image'><img src='./assets/img/project-2.png' alt='Stock & Ventas'>
+                            <div class='project-overlay'><button class='btn btn-primary btn-sm'
+                                    onclick='openModal(2)'>Ver detalles</button></div>
+                        </div>
+                        <div class='project-content'>
+                            <h3 class='project-title'>Stock & Ventas Mini-ERP</h3>
+                            <p class='project-description'>Sistema de gestión de inventario y ventas con reportes,
+                                gráficos y exportación de datos.</p>
+                            <div class='project-stack'><span class='tag'>React</span><span
+                                    class='tag'>Express</span><span class='tag'>MySQL</span><span
+                                    class='tag'>Chart.js</span></div>
+                            <ul class='project-features'>
+                                <li><i class='fas fa-check'></i> Control de stock con alertas de inventario bajo</li>
+                                <li><i class='fas fa-check'></i> Módulo de ventas con facturación</li>
+                                <li><i class='fas fa-check'></i> Reportes visuales y exportación a Excel</li>
+                            </ul>
+                            <div class='project-links'>
+                                <a href='https://demo-stock.netlify.app' target='_blank'
+                                    class='btn btn-outline btn-sm'><i class='fas fa-external-link-alt'></i> Demo</a>
+                                <a href='https://github.com/tu-usuario/stock-ventas' target='_blank'
+                                    class='btn btn-outline btn-sm'><i class='fab fa-github'></i> Código</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class='project-card' data-project='3'>
+                        <div class='project-image'><img src='./assets/img/project-3.png' alt='Automation Hub'>
+                            <div class='project-overlay'><button class='btn btn-primary btn-sm'
+                                    onclick='openModal(3)'>Ver detalles</button></div>
+                        </div>
+                        <div class='project-content'>
+                            <h3 class='project-title'>Automation Hub con n8n</h3>
+                            <p class='project-description'>Workflows de automatización para integración de APIs,
+                                notificaciones y procesamiento de datos.</p>
+                            <div class='project-stack'><span class='tag'>n8n</span><span
+                                    class='tag'>Webhooks</span><span class='tag'>APIs REST</span><span
+                                    class='tag'>PostgreSQL</span></div>
+                            <ul class='project-features'>
+                                <li><i class='fas fa-check'></i> Automatización de notificaciones por email/WhatsApp
+                                </li>
+                                <li><i class='fas fa-check'></i> Integración con múltiples APIs (Slack, Google Sheets)
+                                </li>
+                                <li><i class='fas fa-check'></i> Procesamiento y transformación de datos</li>
+                            </ul>
+                            <div class='project-links'>
+                                <a href='#' class='btn btn-outline btn-sm disabled'><i
+                                        class='fas fa-external-link-alt'></i> Demo</a>
+                                <a href='https://github.com/tu-usuario/automation-hub' target='_blank'
+                                    class='btn btn-outline btn-sm'><i class='fab fa-github'></i> Código</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class='project-card' data-project='4'>
+                        <div class='project-image'><img src='./assets/img/project-4.png' alt='Estructuras de Datos'>
+                            <div class='project-overlay'><button class='btn btn-primary btn-sm'
+                                    onclick='openModal(4)'>Ver detalles</button></div>
+                        </div>
+                        <div class='project-content'>
+                            <h3 class='project-title'>Estructuras de Datos en C++</h3>
+                            <p class='project-description'>Implementaciones de estructuras de datos fundamentales con
+                                análisis de complejidad y casos de prueba.</p>
+                            <div class='project-stack'><span class='tag'>C++</span><span
+                                    class='tag'>Algoritmos</span><span class='tag'>Testing</span></div>
+                            <ul class='project-features'>
+                                <li><i class='fas fa-check'></i> Pilas, colas y listas enlazadas</li>
+                                <li><i class='fas fa-check'></i> Árboles binarios y AVL con balanceo</li>
+                                <li><i class='fas fa-check'></i> Documentación y análisis de complejidad</li>
+                            </ul>
+                            <div class='project-links'>
+                                <a href='#' class='btn btn-outline btn-sm disabled'><i
+                                        class='fas fa-external-link-alt'></i> Demo</a>
+                                <a href='https://github.com/tu-usuario/estructuras-datos-cpp' target='_blank'
+                                    class='btn btn-outline btn-sm'><i class='fab fa-github'></i> Código</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class='section skills' id='skills'>
+            <div class='container'>
+                <div class='section-header'>
+                    <h2 class='section-title'>Habilidades Técnicas</h2>
+                    <p class='section-description'>Stack tecnológico y herramientas de desarrollo</p>
+                </div>
+                <div class='skills-highlight'>
+                    <h3>Stack Principal</h3>
+                    <div class='main-stack'>
+                        <div class='stack-item'><i class='fab fa-react'></i><span>React</span></div>
+                        <div class='stack-item'><i class='fab fa-node-js'></i><span>Node.js</span></div>
+                        <div class='stack-item'><i class='fas fa-database'></i><span>SQL</span></div>
+                        <div class='stack-item'><i class='fas fa-cogs'></i><span>n8n</span></div>
+                    </div>
+                </div>
+                <div class='skills-grid'>
+                    <div class='skill-category'>
+                        <div class='category-header'><i class='fas fa-palette'></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class='skill-tags'><span class='skill-tag'>React</span><span class='skill-tag'>JavaScript
+                                ES6+</span><span class='skill-tag'>HTML5</span><span class='skill-tag'>CSS3</span><span
+                                class='skill-tag'>Responsive Design</span><span class='skill-tag'>Fetch API</span></div>
+                    </div>
+                    <div class='skill-category'>
+                        <div class='category-header'><i class='fas fa-server'></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class='skill-tags'><span class='skill-tag'>Node.js</span><span
+                                class='skill-tag'>Express</span><span class='skill-tag'>APIs REST</span><span
+                                class='skill-tag'>JWT Auth</span><span class='skill-tag'>Middleware</span><span
+                                class='skill-tag'>Validaciones</span></div>
+                    </div>
+                    <div class='skill-category'>
+                        <div class='category-header'><i class='fas fa-database'></i>
+                            <h3>Bases de Datos</h3>
+                        </div>
+                        <div class='skill-tags'><span class='skill-tag'>PostgreSQL</span><span
+                                class='skill-tag'>MySQL</span><span class='skill-tag'>SQL Queries</span><span
+                                class='skill-tag'>Relaciones</span><span class='skill-tag'>Migraciones</span></div>
+                    </div>
+                    <div class='skill-category'>
+                        <div class='category-header'><i class='fas fa-tools'></i>
+                            <h3>Herramientas</h3>
+                        </div>
+                        <div class='skill-tags'><span class='skill-tag'>Git & GitHub</span><span class='skill-tag'>VS
+                                Code</span><span class='skill-tag'>Postman</span><span class='skill-tag'>Chrome
+                                DevTools</span><span class='skill-tag'>npm</span></div>
+                    </div>
+                    <div class='skill-category'>
+                        <div class='category-header'><i class='fas fa-project-diagram'></i>
+                            <h3>Automatización</h3>
+                        </div>
+                        <div class='skill-tags'><span class='skill-tag'>n8n</span><span
+                                class='skill-tag'>Webhooks</span><span class='skill-tag'>API Integration</span><span
+                                class='skill-tag'>Workflows</span><span class='skill-tag'>Cron Jobs</span></div>
+                    </div>
+                    <div class='skill-category'>
+                        <div class='category-header'><i class='fas fa-graduation-cap'></i>
+                            <h3>Ciencias de la Computación</h3>
+                        </div>
+                        <div class='skill-tags'><span class='skill-tag'>C++</span><span class='skill-tag'>Estructuras de
+                                Datos</span><span class='skill-tag'>Pilas & Colas</span><span
+                                class='skill-tag'>Árboles</span><span class='skill-tag'>Algoritmos</span></div>
+                    </div>
+                    <div class='skill-category'>
+                        <div class='category-header'><i class='fas fa-robot'></i>
+                            <h3>IA Aplicada</h3>
+                        </div>
+                        <div class='skill-tags'><span class='skill-tag'>Prompting</span><span
+                                class='skill-tag'>ChatGPT</span><span class='skill-tag'>Code Assistance</span><span
+                                class='skill-tag'>Debugging</span><span class='skill-tag'>Documentation</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='section sobre-mi' id='sobre-mi'>
+            <div class='container'>
+                <div class='section-header'>
+                    <h2 class='section-title'>Sobre Mí</h2>
+                    <p class='section-description'>Desarrollador enfocado en crear soluciones completas y escalables</p>
+                </div>
+                <div class='about-content'>
+                    <div class='about-text'>
+                        <p class='lead'>Soy estudiante de <strong>Licenciatura en Sistemas de la Información</strong> en
+                            la Universidad Nacional del Nordeste (UNNE), con enfoque en desarrollo Full Stack y
+                            automatización de procesos.</p>
+                        <p>Me especializo en construir aplicaciones web completas, desde la autenticación y gestión de
+                            roles hasta la integración con bases de datos y deployment. Tengo experiencia implementando
+                            CRUDs, APIs REST y automatizaciones con n8n que optimizan flujos de trabajo.</p>
+                        <p>Mi formación en Ciencias de la Computación me permite abordar problemas con una base sólida
+                            en estructuras de datos y algoritmos. Utilizo IA como herramienta de apoyo para acelerar el
+                            desarrollo, debugging y documentación.</p>
+                        <div class='about-info'>
+                            <div class='info-item'><i class='fas fa-map-marker-alt'></i>
+                                <div><strong>Ubicación</strong><span>Corrientes, Argentina</span></div>
+                            </div>
+                            <div class='info-item'><i class='fas fa-university'></i>
+                                <div><strong>Educación</strong><span>Universidad Nacional del Nordeste
+                                        (UNNE)</span><small>Licenciatura en Sistemas de la Información (en
+                                        curso)</small></div>
+                            </div>
+                            <div class='info-item'><i class='fas fa-language'></i>
+                                <div><strong>Idiomas</strong><span>Español (Nativo) · Inglés (Intermedio)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='timeline'>
+                        <h3>Hitos Clave</h3>
+                        <div class='timeline-item'>
+                            <div class='timeline-marker'></div>
+                            <div class='timeline-content'><span class='timeline-year'>2024</span>
+                                <h4>Desarrollo Full Stack</h4>
+                                <p>Implementación de aplicaciones completas con autenticación, bases de datos y
+                                    deployment en producción</p>
+                            </div>
+                        </div>
+                        <div class='timeline-item'>
+                            <div class='timeline-marker'></div>
+                            <div class='timeline-content'><span class='timeline-year'>2023</span>
+                                <h4>Automatización con n8n</h4>
+                                <p>Creación de workflows de automatización para integración de APIs y procesamiento de
+                                    datos</p>
+                            </div>
+                        </div>
+                        <div class='timeline-item'>
+                            <div class='timeline-marker'></div>
+                            <div class='timeline-content'><span class='timeline-year'>2022</span>
+                                <h4>Inicio en Desarrollo Web</h4>
+                                <p>Primeros proyectos con React, Node.js y bases de datos relacionales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='section como-trabajo'>
+            <div class='container'>
+                <div class='section-header'>
+                    <h2 class='section-title'>Cómo Trabajo</h2>
+                    <p class='section-description'>Mi proceso de desarrollo de software</p>
+                </div>
+                <div class='workflow-grid'>
+                    <div class='workflow-card'>
+                        <div class='workflow-icon'><i class='fas fa-lightbulb'></i></div>
+                        <h3>Planifico</h3>
+                        <p>Analizo requisitos, diseño la arquitectura y defino el stack tecnológico. Uso Git desde el
+                            inicio para control de versiones.</p>
+                        <ul>
+                            <li>Definición de funcionalidades</li>
+                            <li>Diseño de base de datos</li>
+                            <li>Planificación de endpoints</li>
+                        </ul>
+                    </div>
+                    <div class='workflow-card'>
+                        <div class='workflow-icon'><i class='fas fa-code'></i></div>
+                        <h3>Construyo</h3>
+                        <p>Desarrollo con código limpio y modular. Implemento validaciones tanto en frontend como
+                            backend. Uso IA como asistente para acelerar el desarrollo.</p>
+                        <ul>
+                            <li>Componentes reutilizables</li>
+                            <li>APIs REST bien estructuradas</li>
+                            <li>Documentación en código</li>
+                        </ul>
+                    </div>
+                    <div class='workflow-card'>
+                        <div class='workflow-icon'><i class='fas fa-bug'></i></div>
+                        <h3>Pruebo</h3>
+                        <p>Testing manual con casos de uso reales. Debugging con Chrome DevTools y logs. Validación de
+                            endpoints con Postman.</p>
+                        <ul>
+                            <li>Pruebas de funcionalidad</li>
+                            <li>Validación de errores</li>
+                            <li>Testing responsive</li>
+                        </ul>
+                    </div>
+                    <div class='workflow-card'>
+                        <div class='workflow-icon'><i class='fas fa-rocket'></i></div>
+                        <h3>Deploy</h3>
+                        <p>Deployment en plataformas como Netlify, Vercel o Railway. Configuración de variables de
+                            entorno y documentación de uso.</p>
+                        <ul>
+                            <li>Deploy automatizado</li>
+                            <li>README completo</li>
+                            <li>Demo funcional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='section contacto' id='contacto'>
+            <div class='container'>
+                <div class='section-header'>
+                    <h2 class='section-title'>Contacto</h2>
+                    <p class='section-description'>¿Tenés un proyecto en mente? Hablemos</p>
+                </div>
+                <div class='contact-content'>
+                    <div class='contact-info'>
+                        <div class='contact-card'><i class='fas fa-map-marker-alt'></i>
+                            <h3>Ubicación</h3>
+                            <p>Corrientes, Argentina</p><small>Disponible para trabajo remoto e híbrido</small>
+                        </div>
+                        <div class='contact-links'>
+                            <a href='https://mail.google.com/mail/u/2/#inbox' class='contact-link'><i
+                                    class='fas fa-envelope'></i>
+                                <div><strong>Email</strong><span>lucasdominguezdev@gmail.com</span></div>
+                            </a>
+                            <a href='https://www.linkedin.com/in/lucas-dominguez-656b242b3/' target='_blank'
+                                class='contact-link'><i class='fab fa-linkedin'></i>
+                                <div><strong>LinkedIn</strong><span>linkedin.com/in/lucas-dominguez</span></div>
+                            </a>
+                            <a href='https://github.com/123lucass' target='_blank' class='contact-link'><i
+                                    class='fab fa-github'></i>
+                                <div><strong>GitHub</strong><span>github.com/123lucass</span></div>
+                            </a>
+                            <a href='https://wa.me/5493794888858' target='_blank' class='contact-link'><i
+                                    class='fab fa-whatsapp'></i>
+                                <div><strong>WhatsApp</strong><span>+54 9 3794 888858</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <form class='contact-form' id='contactForm'>
+                        <div class='form-group'><label for='name'>Nombre</label><input type='text' id='name' name='name'
+                                required></div>
+                        <div class='form-group'><label for='email'>Email</label><input type='email' id='email'
+                                name='email' required></div>
+                        <div class='form-group'><label for='message'>Mensaje</label><textarea id='message'
+                                name='message' rows='5' required></textarea></div>
+                        <button type='submit' class='btn btn-primary'><i class='fas fa-paper-plane'></i> Enviar
+                            Mensaje</button>
+                        <div class='form-message' id='formMessage'></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class='footer'>
+        <div class='container'>
+            <div class='footer-content'>
+                <div class='footer-links'><a href='#inicio'>Inicio</a><a href='#proyectos'>Proyectos</a><a
+                        href='#skills'>Skills</a><a href='#sobre-mi'>Sobre mí</a><a href='#contacto'>Contacto</a></div>
+                <div class='footer-social'>
+                    <a href='https://github.com/123lucass' target='_blank' aria-label='GitHub'><i
+                            class='fab fa-github'></i></a>
+                    <a href='https://linkedin.com/in/lucas-dominguez-656b242b3' target='_blank' aria-label='LinkedIn'><i
+                            class='fab fa-linkedin'></i></a>
+                    <a href='mailto:lucasdominguezdev@gmail.com' aria-label='Email'><i class='fas fa-envelope'></i></a>
+                </div>
+                <p class='footer-copy'>Hecho por <strong>Lucas Rodolfo Silvano Dominguez</strong> · <span
+                        id='currentYear'></span></p>
+            </div>
+        </div>
+    </footer>
+    <button class='scroll-top' id='scrollTop' aria-label='Scroll to top'><i class='fas fa-arrow-up'></i></button>
+    <div class='modal' id='projectModal'>
+        <div class='modal-overlay' onclick='closeModal()'></div>
+        <div class='modal-content'>
+            <button class='modal-close' onclick='closeModal()' aria-label='Close modal'><i
+                    class='fas fa-times'></i></button>
+            <div id='modalBody'></div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
